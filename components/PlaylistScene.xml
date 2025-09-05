@@ -1,0 +1,24 @@
+<!-- pkg:/components/PlaylistScene.xml -->
+<component name="PlaylistScene" extends="Scene">
+    <!-- Include your BrightScript files -->
+    <script type="text/brightscript" uri="pkg:/components/config.brs" />
+    <script type="text/brightscript" uri="pkg:/components/PlaylistScene.brs" />
+
+    <interface>
+        <field id="playlists" type="array" />
+    </interface>
+
+    <children>
+        <MarkupList
+            id="playlistList"
+            translation="[100, 140]"
+            itemSize="[500, 60]"
+        />
+        <Label
+            id="debuglabel"
+            text="Loading playlists..."
+            translation="[100, 80]"
+            horizAlign="left"
+        />
+    </children>
+</component>
