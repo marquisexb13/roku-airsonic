@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MainScene" extends="Scene">
+  <interface>
+    <field id="currentView" type="string" />
+  </interface>
+  <children>
+    <LoginScene id="login" visible="false" />
+    <HomeScene id="home" visible="false" />
+    <NowPlayingScene id="nowplaying" visible="false" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+
+  <!-- ✅ ADD THESE -->
+  <script type="text/brightscript" uri="pkg:/source/Storage.brs" />
+  <script type="text/brightscript" uri="pkg:/source/Router.brs" />
+  <script type="text/brightscript" uri="pkg:/source/ApiClient.brs" />
+  <script type="text/brightscript" uri="pkg:/source/Auth.brs" />
+
+
+
+
+
+</component>

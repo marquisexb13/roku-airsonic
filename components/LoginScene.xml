@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="LoginScene" extends="Group">
+
+
+	<interface>
+		<field id="loginData" type="assocarray" />
+		<field id="loginSuccess" type="boolean" />
+	</interface>
+
+
+	<!-- ✅ ADD THIS -->
+	<script type="text/brightscript" uri="pkg:/components/LoginScene.brs" />
+
+	<!-- ✅ ADD THESE -->
+	<script type="text/brightscript" uri="pkg:/source/ApiClient.brs" />
+	<script type="text/brightscript" uri="pkg:/source/Auth.brs" />
+
+
+
+
+  <children>
+    <Rectangle
+        width="1280"
+        height="720"
+        color="0x000000FF" />
+
+    <Label
+        text="Subsonic Roku"
+        translation="[60,60]"
+        width="800"
+        height="50" />
+
+
+
+    <Label
+        text="Press OK to enter server settings"
+        translation="[60,120]"
+        width="1000"
+        height="50" />
+
+	<Label
+		id="status"
+		text=""
+		translation="[60,180]"
+		width="1100"
+		height="50" />
+
+  </children>
+
+
+
+</component>

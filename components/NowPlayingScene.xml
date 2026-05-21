@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="NowPlayingScene" extends="Group">
+  <children>
+    <Label id="title" translation="[60,60]" text="Now Playing" />
+    <Label id="track" translation="[60,110]" text="" />
+    <Video id="player" translation="[0,0]" width="0" height="0" />
+    <Label id="hint" translation="[60,170]" text="Back to return" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/NowPlayingScene.brs" />
+</component>

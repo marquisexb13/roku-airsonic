@@ -1,0 +1,34 @@
+<component name="HomeScene" extends="Group">
+
+    <script type="text/brightscript" uri="pkg:/components/HomeScene.brs" />
+    <script type="text/brightscript" uri="pkg:/source/ApiClient.brs" />
+
+    <interface>
+        <field id="loginData" type="assocarray"/>
+    </interface>
+
+    <children>
+
+        <!-- Status text -->
+        <Label
+            id="status"
+            translation="[50,50]"
+            width="1000"
+            height="40"
+            text="Waiting..."
+        />
+
+        <!-- ✅ THIS IS CRITICAL -->
+		<LabelList
+			id="playlistGrid"
+			translation="[50,120]"
+			width="1200"
+			height="500"
+			itemSize="[1000,40]"
+			numRows="10"
+			focusable="true"
+			itemContentField="title"
+		/>
+    </children>
+
+</component>
