@@ -1,7 +1,7 @@
 function GetAirsonicConfig() as Object
     return {
         serverUrl: "http://demo.subsonic.org:80",
-        username: "guest",
+        username: "guest5",
         password: "guest",  ' MD5-encoded password
         apiVersion: "1.15",
         clientName: "rokuApp",
