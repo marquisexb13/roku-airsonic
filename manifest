@@ -1,5 +1,7 @@
-title=Airsonic Roku
-major_version=1
-minor_version=0
+title=Subsonic Roku
+subtitle=OpenSubsonic Client
+major_version=0
+minor_version=1
 build_version=00001
-sg_component_path=components
+ui_resolutions=hd
+splash_color=#101214
